@@ -1,0 +1,2 @@
+# BreakEven
+A gambling simulator
