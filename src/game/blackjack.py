@@ -1,4 +1,4 @@
-BASE_URL = "url here"
+BASE_URL = "deck of cards url here!"
 
 
 def hit():
