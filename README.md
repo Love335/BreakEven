@@ -58,5 +58,9 @@ Just you, the deck, and a mounting sense that Mike might never emotionally recov
 ```
 source .venv/bin/activate
 
+//for automatic refresh of the server each time you make changes and save the  python code:
+flask --debug --app src/app run
+
+//without automatic refresh
 flask --app src/app run
 ```
