@@ -49,3 +49,13 @@ Just you, the deck, and a mounting sense that Mike might never emotionally recov
 - Python  
 - Deck of Cards API  
 - Returns hand results, updated balance, and game state  
+
+
+### Instructions
+
+- Running the server:
+
+´´´
+flask --app src/app run
+
+´´´
