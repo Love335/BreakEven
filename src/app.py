@@ -1,8 +1,9 @@
 # TODO: Import neccessary utilities and make the API calls to handle the shuffling of cards.
 # Create endpoints that the frontend can access
 #
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 import requests
+import game.blackjack as game
 
 app = Flask(__name__)
 
@@ -10,6 +11,12 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     return render_template("index.html")
+
+
+@app.route("/hit", methods=["POST"])
+def hit():
+    response = game.hit()
+    return jsonify(response)
 
 
 @app.route("/api/newdeck")
