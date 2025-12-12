@@ -12,7 +12,7 @@ def main():
     return render_template("index.html")
 
 
-@app.route("/")
+@app.route("/api/newdeck")
 def get_deck():
     url = "https://deckofcardsapi.com/api/deck/new/"
     response = requests.get(url)
@@ -20,10 +20,10 @@ def get_deck():
     print(data)
     user_id = data["deck_id"]
     print(user_id)
-    return ""
+    return data
 
 
-@app.route("/")
+@app.route("/api/drawcard")
 def draw_card():
     url = "https://deckofcardsapi.com/api/deck/iun3e4moglhs/draw/?count=2"
     response = requests.get(url)
@@ -31,8 +31,6 @@ def draw_card():
     print(data)
     return data
 
-
-draw_card()
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
