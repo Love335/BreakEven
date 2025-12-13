@@ -1,3 +1,51 @@
 body {
-    background-color: red;
+    background-color: #0d5c0d; 
+    font-family: Georgia, serif;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-button {
+    background-color: #c41e3a;; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    border: 3px solid gold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.game-button:hover {
+    background-color: #a01729;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); 
+}
+
+.deck-button {
+    background-color: #c41e3a;; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    border: 3px solid gold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.deck-button:hover {
+    background-color: #a01729; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
