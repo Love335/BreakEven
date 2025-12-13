@@ -11,6 +11,10 @@ app = Flask(__name__)
 def main():
     return render_template("index.html")
 
+@app.route("/game")
+def game():
+    return render_template("game.html")
+
 
 @app.route("/api/newdeck")
 def get_deck():
@@ -52,7 +56,6 @@ def get_moonphase():
     headers = {
         "Authorization": f"Basic {auth_str}"
     }
-
 
     response = requests.get(url, headers=headers, params=params)
     data = response.json()
