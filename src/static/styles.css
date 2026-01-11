@@ -206,3 +206,12 @@ h1 {
     width: 64px;
     height: 64px;
 }
+
+#game_over_title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 96px;
+}
+
+.game_over {
+    font-size: 32px;
+}
